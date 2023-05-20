@@ -1,0 +1,51 @@
+@charset "uft-8";
+
+.lines {
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+}
+
+.btn-box button {
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#0000ff;
+    border: none;
+    border-radius: 24px;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .btn-box button:hover {
+    opacity: .6;
+  }
+  
+  .more {
+    display: none;
+  }
+  
+  .more ul {
+    margin: 16px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .more.appear {
+    display: block;
+    animation: .5s fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
